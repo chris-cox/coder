@@ -1,7 +1,7 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
-	"name": "Debian",
-	"image": "mcr.microsoft.com/devcontainers/base:bookworm",
-	"overrideCommand": true
+  "name": "Debian (coder/envbuilder safe)",
+  "build": { "dockerfile": "Dockerfile" },
+  "overrideCommand": false,
+  "remoteUser": "vscode",
+  "postCreateCommand": "bash -lc 'echo ready'"
 }
